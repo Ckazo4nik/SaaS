@@ -8,3 +8,4 @@
   = dish.price
   %br
   = link_to 'edit dish', edit_dish_path(dish)
+  = link_to 'delete dish', dish, method: :delete, data: {confirm: 'Are you sure?'}
