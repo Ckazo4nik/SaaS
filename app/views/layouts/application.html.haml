@@ -7,15 +7,16 @@
     = javascript_include_tag 'application'
 
   %body
-    = render 'shared/header'
-    %p.notice
-      = notice
-    %p.alert
-      = alert
-    - if current_user
-      %h2
-        Welcome
-        = current_user.name || current_user.email
-      - if current_user.admin?
-        %h4 Hi Admin
-    = yield
+    .container
+      = render 'shared/header'
+      %p.notice
+        = notice
+      %p.alert
+        = alert
+      - if current_user
+        %h2
+          Welcome
+          = current_user.name || current_user.email
+        - if current_user.admin?
+          %h4 Hi Admin
+      = yield

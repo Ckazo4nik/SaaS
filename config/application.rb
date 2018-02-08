@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 
 module SaaS
   class Application < Rails::Application
+    config.autoload_paths += %W(#{config.root}/lib)
     # Use the responders controller from the responders gem
     config.app_generators.scaffold_controller :responders_controller
     # Initialize configuration defaults for originally generated Rails version.
