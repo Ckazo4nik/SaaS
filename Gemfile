@@ -9,11 +9,14 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'jbuilder', '~> 2.5'
+gem 'coffee-rails', '~> 4.2'
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.7'
-  gem 'factory_bot_rails'
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
@@ -25,9 +28,11 @@ end
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'rails-controller-testing'
+  gem 'capybara'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails', '~> 1.0'
-gem 'capybara'
-gem 'cucumber-rails'
+
 gem 'responders'
+gem 'devise'
+gem 'jquery-rails'

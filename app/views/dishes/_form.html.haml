@@ -1,0 +1,17 @@
+= form_for @dish do |f|
+  - if @dish.errors.any?
+    %div.error_explanation
+      %h2
+        = pluralize(@dish.errors.count, "error")
+      %ul
+        - @dish.errors.full_messages.each do |msg|
+          = msg
+
+
+  = f.label :name, 'Name'
+  = f.text_field :name
+
+  = f.label :price, 'Price'
+  = f.number_field :price
+
+  = f.submit

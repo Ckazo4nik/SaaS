@@ -1,0 +1,10 @@
+- if user_signed_in?
+  = link_to "Create dish", new_dish_path
+
+- @dishes.each do |dish|
+  %br
+  = dish.name
+  %br
+  = dish.price
+  %br
+  = link_to 'edit dish', edit_dish_path(dish)
