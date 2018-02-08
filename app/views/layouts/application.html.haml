@@ -7,16 +7,15 @@
     = javascript_include_tag 'application'
 
   %body
-    - if user_signed_in?
-      %h1
-        = current_user.email
-      = link_to 'Log out', destroy_user_session_path,  method: :delete
-      = link_to 'Вихід',  destroy_user_session_path, method: :delete
-    - else
-      = link_to 'Sign up', new_user_registration_path
-      = link_to 'Sign in', user_session_path
+    = render 'shared/header'
     %p.notice
       = notice
     %p.alert
       = alert
+    - if current_user
+      %h2
+        Welcome
+        = current_user.name || current_user.email
+      - if current_user.admin?
+        %h4 Hi Admin
     = yield
