@@ -9,4 +9,7 @@
 .row
   .col-md-12
     = calendar @date do |date|
-      = date.day
+      - if menu = Menu.find_by(date: date)
+        = link_to "#{date.day}", menu
+      - else
+        = date.day
