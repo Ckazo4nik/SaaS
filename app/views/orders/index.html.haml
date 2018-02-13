@@ -1,0 +1,13 @@
+- @orders.each do |order|
+  %h2
+    Price:
+    = order.price
+  %h3
+    Dishes:
+  - order.dishes.each do |dish|
+    %h5
+      Name
+      = dish.name
+      %br
+      Price:
+      = dish.price

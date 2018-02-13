@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.4.1"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -26,6 +27,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 group :test do
+  gem 'shoulda-callback-matchers', '~> 1.1.1'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'rails-controller-testing'
   gem 'capybara'
@@ -38,3 +40,8 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'rails_admin'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
+gem "dynamic_form"
+gem 'launchy'
+gem 'active_model_serializers', '~> 0.9.3'

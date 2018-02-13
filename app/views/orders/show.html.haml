@@ -1,0 +1,11 @@
+%h4
+  Price
+  = @order.price
+- @order.dishes.each do |dish|
+  = image_tag dish.image.url(:thumb) if dish.image.present?
+  %h4
+    Name:
+    = dish.name
+    %br
+    Price:
+    = dish.price

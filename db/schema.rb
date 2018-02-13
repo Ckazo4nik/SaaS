@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180209100523) do
+ActiveRecord::Schema.define(version: 20180213170947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20180209100523) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "type_id"
+    t.string "image"
   end
 
   create_table "dishes_menus", force: :cascade do |t|
@@ -32,10 +33,32 @@ ActiveRecord::Schema.define(version: 20180209100523) do
     t.index ["menu_id"], name: "index_dishes_menus_on_menu_id"
   end
 
+  create_table "dishes_orders", force: :cascade do |t|
+    t.bigint "dish_id"
+    t.bigint "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dish_id"], name: "index_dishes_orders_on_dish_id"
+    t.index ["order_id"], name: "index_dishes_orders_on_order_id"
+  end
+
   create_table "menus", force: :cascade do |t|
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "menu_id"
+    t.integer "price", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "first_dish"
+    t.integer "main_dish"
+    t.integer "drink"
+    t.index ["menu_id"], name: "index_orders_on_menu_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "types", force: :cascade do |t|
