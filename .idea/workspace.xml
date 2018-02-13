@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dcaf210-48d2-4cb2-b6d3-88ee372dd892" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/api/v1/orders_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/menus/_form.html.haml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/menus/menu_today.html.haml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/orders/index.html.haml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/orders/new.html.haml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/orders/show.html.haml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/acceptance/orders/create_order.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/type_fectory.rb" />
-      <change beforePath="$PROJECT_DIR$/.idea/SaaS.iml" afterPath="$PROJECT_DIR$/.idea/SaaS.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/calendar_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/calendar_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dishes_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/menus_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/menus_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/dish.rb" afterPath="$PROJECT_DIR$/app/models/dish.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/menu.rb" afterPath="$PROJECT_DIR$/app/models/menu.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.haml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/menus/show.html.haml" afterPath="$PROJECT_DIR$/app/views/menus/show.html.haml" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.haml" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.haml" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/acceptance/dish/create_dish_spec.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/acceptance/dish/delete_dish_spec.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/acceptance/dish/update_dish_spec.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/acceptance/menu/create_menu.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/dish_factory.rb" afterPath="$PROJECT_DIR$/spec/factories/dish_factory.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/models/dish_spec.rb" afterPath="$PROJECT_DIR$/spec/models/dish_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/models/dishes_menu_spec.rb" afterPath="$PROJECT_DIR$/spec/models/dishes_menu_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/models/menu_spec.rb" afterPath="$PROJECT_DIR$/spec/models/menu_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/models/type_spec.rb" afterPath="$PROJECT_DIR$/spec/models/type_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,16 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dishes_order.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/dishes_order.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dishes_order_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/dishes_order_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -186,8 +142,18 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="166">
+              <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -230,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20180209063542_create_menus.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180209063747_add_menu_id_to_dish.rb" />
         <option value="$PROJECT_DIR$/app/models/menus_dish.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180209065609_add_type_to_dishes.rb" />
@@ -280,6 +245,7 @@
         <option value="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
         <option value="$PROJECT_DIR$/spec/factories/type_fectory.rb" />
         <option value="$PROJECT_DIR$/spec/acceptance/orders/create_order.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
@@ -330,92 +296,13 @@
             <path>
               <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="menus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
               <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="acceptance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="acceptance" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SaaS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SaaS" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -774,12 +661,12 @@
       <workItem from="1518511252916" duration="918000" />
       <workItem from="1518519689305" duration="54000" />
       <workItem from="1518519858938" duration="5877000" />
-      <workItem from="1518540806860" duration="7804000" />
+      <workItem from="1518540806860" duration="7913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89117000" />
+    <option name="totallyTimeSpent" value="89226000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -853,13 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dishes/_error_messages.hrml.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dishes/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1206,10 +1086,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="166">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding />
         </state>
       </provider>

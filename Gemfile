@@ -45,3 +45,4 @@ gem "mini_magick"
 gem "dynamic_form"
 gem 'launchy'
 gem 'active_model_serializers', '~> 0.9.3'
+gem 'rails_12factor', group: :production
