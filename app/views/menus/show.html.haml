@@ -34,22 +34,17 @@
     = dish.price
   %br
 
-= form_for [@menu, @order] do |f|
-  -#= f.collection_check_boxes :dish_ids, @first_dishes, :id, :name
-  -#%br
-  -#= f.collection_check_boxes :dish_ids, @second_dishes, :id, :name
-  -#%br
-  -#= f.collection_check_boxes :dish_ids, @drink_dishes, :id, :name
-  -#%br
-  = @order.errors.full_messages.first if @order.errors.any?
-  = f.error_messages
-  = f.label :first_dish, "First"
-  = f.collection_select :first_dish, @first_dishes,:id,:name, include_blank: true
-  = f.label :main_dish
-  = f.collection_select :main_dish, @second_dishes,:id,:name, include_blank: true
-  = f.label :drink
-  = f.collection_select :drink, @drink_dishes, :id,:name, include_blank: true
-  = f.submit
+- if @menu.date == Date.today
+  = form_for [@menu, @order] do |f|
+    = @order.errors.full_messages.first if @order.errors.any?
+    = f.error_messages
+    = f.label :first_dish, "First"
+    = f.collection_select :first_dish, @first_dishes,:id,:name, include_blank: true
+    = f.label :main_dish
+    = f.collection_select :main_dish, @second_dishes,:id,:name, include_blank: true
+    = f.label :drink
+    = f.collection_select :drink, @drink_dishes, :id,:name, include_blank: true
+    = f.submit
 
 - if current_user ? current_user.admin : false
   - @orders.each do |order|
